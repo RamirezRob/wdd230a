@@ -1,0 +1,23 @@
+@media (min-width: 600px) {
+    header {
+        color: white;
+        background-color: black;
+    }
+
+    main {
+        grid-template-columns: 1fr 1fr;
+        
+    }
+
+    nav ul {
+		display: flex;
+        max-width: 800px;
+        align-items: center;
+        justify-content: center;
+
+	}
+
+	nav ul li {
+		flex: 1 1 100%;
+	}
+}
