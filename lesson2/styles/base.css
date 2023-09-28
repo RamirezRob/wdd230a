@@ -1,6 +1,6 @@
 body {
-    font-size: 16px;
-    font-family: "Sansita", Ubuntu, sans-serif;
+    font-size: 15px;
+    font-family: "Roboto", Ubuntu, sans-serif;
 }
 
 /* phone or baseline views **************************/
@@ -17,8 +17,22 @@ main {
 main section {
     margin: 0.5rem;
     border: 1px solid #bbb;
-    padding: 0 1rem;
     background-color: #eee;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 1.6rem;
+    margin: 1.2rem 0.25rem;
+    padding-left: 15px;
+}
+
+h2 {
+    padding-left: 15px;
+}
+
+h3 {
+    padding-left: 15px;
 }
 
 main section h2 {
@@ -32,6 +46,23 @@ img {
 main section:nth-child(2) {
     display: none;
     margin: 0.5rem;
+}
+
+.card p {
+    padding: 0 1rem;
+}
+
+.card h4 {
+    background-color: grey;
+    padding: 15px;
+    margin-top: 0px;
+    font-size: 1em;
+
+}
+
+.card h5 {
+    padding-left: 15px;
+    font-size: 1em;
 }
 
 
