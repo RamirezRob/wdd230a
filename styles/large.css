@@ -9,6 +9,11 @@
         
     }
 
+    nav {
+        max-width: 700px;
+        margin: auto;
+    }
+
     nav ul {
 		display: flex;
         max-width: 800px;
