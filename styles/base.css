@@ -1,8 +1,8 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -10,18 +10,18 @@ body {
 
 
 header {
-    
-    background-color:royalblue;
+
+    background-color: royalblue;
     color: white;
     max-width: 640px;
     margin: auto;
     padding: 1rem;
     display: flex;
     align-items: center;
-    justify-content:space-evenly
+    justify-content: space-evenly
 }
 
-.menu a{
+.menu a {
     background-color: black;
     color: white;
     max-width: 640px;
@@ -29,7 +29,7 @@ header {
     display: block;
     text-align: center;
     text-decoration: none;
-    
+
 }
 
 h2 {
@@ -46,14 +46,15 @@ h3 {
     text-align: center;
 }
 
-main, footer {
+main,
+footer {
     max-width: 640px;
     margin: auto;
     padding: 1rem;
     background-color: white;
 }
 
-.card{
+.card {
     border: 1px solid #bbb
 }
 
@@ -70,15 +71,85 @@ main {
 }
 
 section {
-    background-color: #fff; 
+    background-color: #fff;
 }
 
-footer{
+footer {
     background-color: royalblue;
     color: white;
     text-align: center;
 }
 
 /* Larger Views ******************************/
+#menu2 {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #eee;
+    color: #000;
+}
 
+#menu2::before {
+    content: "≡";
+}
 
+nav {
+    background-color: tomato;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+}
+
+#menu2.show::before {
+    content: "X";
+}
+
+/* Media Query for wider than mobile viewports. Breakpoint should be based upon the design and content and use em units to be relative to the user's font size versus fixed with pixels.*/
+@media only screen and (min-width: 40em) {
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu2 {
+        display: none;
+    }
+}
